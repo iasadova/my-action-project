@@ -35,10 +35,10 @@ jobs:
       with:
         arguments: build
 
-    uses: mr-smithers-excellent/docker-build-push@v5
-    with:
-     image: asmira2012/nlp-agent-k8-tools
-     registry: docker.io
-     username: ${{ secrets.DOCKER_USERNAME }}
-     password: ${{ secrets.DOCKER_PASSWORD }}
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: asmira2012/nlp-agent-k8-tools
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
         
